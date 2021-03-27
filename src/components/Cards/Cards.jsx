@@ -10,17 +10,17 @@ export default function Cards() {
       <h2>Our Latest Works</h2>
       <Card
         variant="a"
-        title="Resesigning Stuff.se"
+        title="Redesigning Stuff.se"
         content="Illustration, Web Design"
       />
       <Card
         variant="b"
-        title="Resesigning Stuff.se"
+        title="Redesigning Stuff.se"
         content="Illustration, Web Design"
       />
       <Card
         variant="c"
-        title="Resesigning Stuff.se"
+        title="Redesigning Stuff.se"
         content="Illustration, Web Design"
       />
     </div>
