@@ -6,26 +6,28 @@ import clsx from "clsx";
 
 export default function Cards() {
   return (
-    <div className={clsx(styles.cards, border)}>
-      <h2>Our Latest Works</h2>
-      <Card
-        variant="a"
-        title="Redesigning Stuff.se"
-        content="Illustration, Web Design"
-        href="https://www.google.se"
-      />
-      <Card
-        variant="b"
-        title="Redesigning Stuff.se"
-        content="Illustration, Web Design"
-        href="https://www.climatevisualizer.com"
-      />
-      <Card
-        variant="c"
-        title="Redesigning Stuff.se"
-        content="Illustration, Web Design"
-        href="https://www.google.se"
-      />
+    <div className={clsx(styles.container, border)}>
+      <div className={styles.cards}>
+        <h2>Our Latest Works</h2>
+        <Card
+          variant="a"
+          title="Redesigning Stuff.se"
+          content="Illustration, Web Design"
+          href="https://www.google.se"
+        />
+        <Card
+          variant="b"
+          title="Redesigning Stuff.se"
+          content="Illustration, Web Design"
+          href="https://www.climatevisualizer.com"
+        />
+        <Card
+          variant="c"
+          title="Redesigning Stuff.se"
+          content="Illustration, Web Design"
+          href="https://www.google.se"
+        />
+      </div>
     </div>
   );
 }
