@@ -6,8 +6,10 @@ import clsx from "clsx";
 export default function Card() {
   return (
     <div className={clsx(styles.card, border)}>
-      <div>card image</div>
-      <div>card text</div>
+      <div className={clsx(styles.cardimage, border)}>card image</div>
+      <div className={styles.cardcontent}>
+        <h2>Redesigning Stuff.se</h2>
+      </div>
     </div>
   );
 }
