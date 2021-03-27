@@ -7,10 +7,10 @@ import clsx from "clsx";
 export default function Cards() {
   return (
     <div className={clsx(styles.cards, border)}>
-      <h1>Our Latest Works</h1>
-      <Card />
-      <Card />
-      <Card />
+      <h2>Our Latest Works</h2>
+      <Card title="Resesigning Stuff.se" content="Illustration, Web Design" />
+      <Card title="Resesigning Stuff.se" content="Illustration, Web Design" />
+      <Card title="Resesigning Stuff.se" content="Illustration, Web Design" />
     </div>
   );
 }

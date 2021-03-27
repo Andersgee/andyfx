@@ -3,12 +3,13 @@ import * as styles from "./card.module.scss";
 import { border } from "@styles/border.module.scss";
 import clsx from "clsx";
 
-export default function Card() {
+export default function Card({ title, content }) {
   return (
     <div className={clsx(styles.card, border)}>
       <div className={clsx(styles.cardimage, border)}>card image</div>
       <div className={styles.cardcontent}>
-        <h2>Redesigning Stuff.se</h2>
+        <h2>{title}</h2>
+        <div>{content}</div>
       </div>
     </div>
   );
