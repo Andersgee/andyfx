@@ -5,7 +5,7 @@ import clsx from "clsx";
 
 export default function Card({ title, content }) {
   return (
-    <div className={clsx(styles.card, border)}>
+    <div className={clsx(styles.card)}>
       <div className={clsx(styles.cardimage, border)}>card image</div>
       <div className={styles.cardcontent}>
         <h2>{title}</h2>
