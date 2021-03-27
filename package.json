@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "clsx": "^1.1.1",
     "gatsby": "^3.1.2",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-google-gtag": "^3.1.0",
