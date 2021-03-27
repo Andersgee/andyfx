@@ -1,5 +1,8 @@
 @import "@styles/variables/all";
 
 .landingpage {
-  background: $color-primary;
+  display: grid;
+  grid-template-rows: minmax(10rem, 20rem) auto 10rem;
+  min-height: 100vh;
+  background: $color-background;
 }

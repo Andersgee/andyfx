@@ -5,8 +5,9 @@ import * as styles from "./landingpage.module.scss";
 export default function LandingPage() {
   return (
     <div className={styles.landingpage}>
-      <div>landing page div text here</div>
+      <div>landing page top</div>
       <Hero />
+      <div>landing page bottom</div>
     </div>
   );
 }
