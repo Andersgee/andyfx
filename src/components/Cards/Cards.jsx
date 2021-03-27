@@ -8,9 +8,21 @@ export default function Cards() {
   return (
     <div className={clsx(styles.cards, border)}>
       <h2>Our Latest Works</h2>
-      <Card title="Resesigning Stuff.se" content="Illustration, Web Design" />
-      <Card title="Resesigning Stuff.se" content="Illustration, Web Design" />
-      <Card title="Resesigning Stuff.se" content="Illustration, Web Design" />
+      <Card
+        variant="a"
+        title="Resesigning Stuff.se"
+        content="Illustration, Web Design"
+      />
+      <Card
+        variant="b"
+        title="Resesigning Stuff.se"
+        content="Illustration, Web Design"
+      />
+      <Card
+        variant="c"
+        title="Resesigning Stuff.se"
+        content="Illustration, Web Design"
+      />
     </div>
   );
 }
