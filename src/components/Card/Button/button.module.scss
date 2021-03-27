@@ -18,15 +18,15 @@
 }
 
 .button.a {
-  background: linear-gradient(225deg, rgb(26, 212, 187), rgb(178, 222, 148));
-}
-
-.button.b {
   background: linear-gradient(
     135deg,
     rgb(114, 233, 243) -20%,
     rgb(64, 77, 230) 120%
   );
+}
+
+.button.b {
+  background: linear-gradient(225deg, rgb(26, 212, 187), rgb(178, 222, 148));
 }
 
 button.c {
