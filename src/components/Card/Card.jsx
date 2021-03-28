@@ -7,10 +7,12 @@ import Button from "./Button";
 export default function Card({ title, content, variant, href }) {
   return (
     <div className={clsx(styles.card)}>
-      <div className={clsx(styles.cardimage, border)}>card image</div>
+      <img src="/images/metal.jpg" className={clsx(styles.cardimage, border)} />
       <div className={styles.cardcontent}>
-        <h2>{title}</h2>
-        <div>{content}</div>
+        <div>
+          <h2>{title}</h2>
+          <div>{content}</div>
+        </div>
         <Button variant={variant} href={href} />
       </div>
     </div>
