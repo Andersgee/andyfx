@@ -65,11 +65,12 @@ $borderradius: 10px;
 }
 
 .cardcontent {
+  box-sizing: border-box;
+  padding: 1rem 3rem 3rem 3rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 1rem 3rem 3rem 3rem;
   width: 100%;
   font-size: 14px;
   color: #7c82a2;
