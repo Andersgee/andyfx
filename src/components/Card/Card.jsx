@@ -4,11 +4,14 @@ import { border } from "@styles/border.module.scss";
 import clsx from "clsx";
 import Button from "./Button";
 
-export default function Card({ title, content, variant, href }) {
+export default function Card({ title, content, variant, href, flip }) {
   return (
-    <div className={clsx(styles.card)}>
-      <img src="/images/metal.jpg" className={clsx(styles.cardimage, border)} />
-      <div className={styles.cardcontent}>
+    <div className={clsx(styles.card, flip && styles.flip)}>
+      <img
+        src="/images/metal.jpg"
+        className={clsx(styles.cardimage, flip && styles.flip)}
+      />
+      <div className={clsx(styles.cardcontent)}>
         <div>
           <h2>{title}</h2>
           <div>{content}</div>

@@ -16,6 +16,7 @@ export default function Cards() {
           href="https://www.google.se"
         />
         <Card
+          flip
           variant="b"
           title="Redesigning Stuff.se"
           content="Illustration, Web Design"

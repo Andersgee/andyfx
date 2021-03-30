@@ -2,6 +2,10 @@
 @import "fonts";
 @import "variables/fonts";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $font-body;
   color: #212529;

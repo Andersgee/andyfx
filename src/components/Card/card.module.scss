@@ -6,16 +6,14 @@ $borderradius: 10px;
 .card {
   display: flex;
   flex-direction: column;
-  align-self: center;
   height: 522px;
-  width: 100%;
   //max-width: $md;
+  width: 100%;
   background: $color-paper;
   border-radius: $borderradius;
   box-shadow: 0 70px 140px 0 rgba(130, 136, 171, 0.2);
 
   //transition: width 0.5s ease;
-
   @include media-md-xxl() {
     flex-direction: row;
     height: 100%;
@@ -27,25 +25,42 @@ $borderradius: 10px;
   }
 }
 
+.card.flip {
+  @include media-md-xxl() {
+    flex-direction: row-reverse;
+  }
+
+  @include media-xxl() {
+    flex-direction: row-reverse;
+  }
+}
+
 .cardimage {
-  border-top-left-radius: $borderradius;
-  border-top-right-radius: $borderradius;
-  width: 100%;
-  height: 50%;
   object-fit: cover;
+  border-radius: $borderradius $borderradius 0 0;
+  //width: 100%;
+  height: 50%;
 
   @include media-md-xxl() {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: $borderradius;
+    border-radius: $borderradius 0 0 $borderradius;
     width: 50%;
     height: 100%;
   }
 
   @include media-xxl() {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: $borderradius;
+    border-radius: $borderradius 0 0 $borderradius;
     width: 50%;
     height: 100%;
+  }
+}
+
+.cardimage.flip {
+  @include media-md-xxl() {
+    border-radius: 0 $borderradius $borderradius 0;
+  }
+
+  @include media-xxl() {
+    border-radius: 0 $borderradius $borderradius 0;
   }
 }
 
@@ -54,17 +69,14 @@ $borderradius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border-bottom-left-radius: $borderradius;
-  border-bottom-right-radius: $borderradius;
-  margin: 1rem 3rem 3rem 3rem;
-
+  padding: 1rem 3rem 3rem 3rem;
+  width: 100%;
   font-size: 14px;
   color: #7c82a2;
 
   @include media-md-xxl() {
-    border-bottom-left-radius: 0;
-    border-top-right-radius: $borderradius;
     text-align: left;
+    width: 50%;
 
     h2 {
       font-size: 32px;
@@ -72,14 +84,22 @@ $borderradius: 10px;
   }
 
   @include media-xxl() {
-    border-bottom-left-radius: 0;
-    border-top-right-radius: $borderradius;
     text-align: left;
-
+    width: 50%;
     h2 {
       font-size: 32px;
     }
   }
 
   background: $color-paper;
+}
+
+.cardimage.flip {
+  @include media-md-xxl() {
+    text-align: left;
+  }
+
+  @include media-xxl() {
+    text-align: left;
+  }
 }
