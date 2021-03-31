@@ -8,7 +8,7 @@ export default function Cards() {
   return (
     <div className={clsx(styles.container, border)}>
       <div className={styles.cards}>
-        <h2>Our Latest Works</h2>
+        <h2 className={styles.heading}>Latest Works</h2>
         <Card
           variant="a"
           title="Redesigning Stuff.se"
