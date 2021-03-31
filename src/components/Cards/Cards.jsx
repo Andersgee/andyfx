@@ -11,21 +11,21 @@ export default function Cards() {
         <h2 className={styles.heading}>Latest Works</h2>
         <Card
           variant="a"
-          title="Redesigning Stuff.se"
-          content="Illustration, Web Design"
+          title="Stuff.se"
+          content="Simple project description"
           href="https://www.google.se"
         />
         <Card
           flip
           variant="b"
-          title="Redesigning Stuff.se"
-          content="Illustration, Web Design"
+          title="Stuff.se"
+          content="Simple project description"
           href="https://www.climatevisualizer.com"
         />
         <Card
           variant="c"
-          title="Redesigning Stuff.se"
-          content="Illustration, Web Design"
+          title="Stuff.se"
+          content="Simple project description"
           href="https://www.google.se"
         />
       </div>
