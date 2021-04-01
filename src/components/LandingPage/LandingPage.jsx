@@ -8,7 +8,7 @@ export default function LandingPage() {
     <div className={styles.landingpage}>
       <Hero />
       <Cards />
-      <div>landing page bottom</div>
+      {/*<div></div>*/}
     </div>
   );
 }

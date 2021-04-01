@@ -9,7 +9,7 @@ $borderradius: 10px;
   height: 522px;
   //max-width: $md;
   width: 100%;
-  background: $color-paper;
+  //background: $color-paper;
   border-radius: $borderradius;
   box-shadow: 0 70px 140px 0 rgba(130, 136, 171, 0.2);
 
@@ -65,6 +65,7 @@ $borderradius: 10px;
 }
 
 .cardcontent {
+  background: $color-paper;
   box-sizing: border-box;
   padding: 1rem 3rem 3rem 3rem;
   text-align: center;
@@ -72,12 +73,16 @@ $borderradius: 10px;
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
+  height: 50%;
   font-size: 14px;
   color: #7c82a2;
+  border-radius: 0 0 $borderradius $borderradius;
 
   @include media-md-xxl() {
     text-align: left;
     width: 50%;
+    height: 100%;
+    border-radius: 0 $borderradius $borderradius 0;
 
     h2 {
       font-size: 32px;
@@ -87,20 +92,20 @@ $borderradius: 10px;
   @include media-xxl() {
     text-align: left;
     width: 50%;
+    height: 100%;
+    border-radius: 0 $borderradius $borderradius 0;
     h2 {
       font-size: 32px;
     }
   }
-
-  background: $color-paper;
 }
 
-.cardimage.flip {
+.cardcontent.flip {
   @include media-md-xxl() {
-    text-align: left;
+    border-radius: $borderradius 0 0 $borderradius;
   }
 
   @include media-xxl() {
-    text-align: left;
+    border-radius: $borderradius 0 0 $borderradius;
   }
 }

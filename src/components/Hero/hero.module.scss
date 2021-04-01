@@ -2,13 +2,13 @@
 
 .hero {
   text-align: center;
-  background: #0f0;
+  //background: #0f0;
 
   @include media-md-xxl() {
-    background: #f00;
+    //background: #f00;
   }
 
   @include media-xxl() {
-    background: #00f;
+    //background: #00f;
   }
 }

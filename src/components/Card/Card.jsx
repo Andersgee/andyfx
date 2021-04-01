@@ -12,7 +12,7 @@ export default function Card({ title, content, variant, href, flip }) {
         className={clsx(styles.cardimage, flip && styles.flip)}
         alt={title}
       />
-      <div className={clsx(styles.cardcontent)}>
+      <div className={clsx(styles.cardcontent, flip && styles.flip)}>
         <div>
           <h2>{title}</h2>
           <div>{content}</div>
