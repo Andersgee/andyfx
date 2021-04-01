@@ -34,10 +34,18 @@
 
   @include media-md-xxl() {
     text-align: left;
+    h2 {
+      text-align: center;
+      //line-height: 38px;
+    }
   }
 
   @include media-xxl() {
     text-align: left;
+    h2 {
+      text-align: center;
+      //line-height: 38px;
+    }
   }
 }
 
@@ -49,9 +57,17 @@
 
   @include media-md-xxl() {
     text-align: left;
+    h2 {
+      text-align: center;
+      //line-height: 38px;
+    }
   }
 
   @include media-xxl() {
     text-align: left;
+    h2 {
+      text-align: center;
+      //line-height: 38px;
+    }
   }
 }
