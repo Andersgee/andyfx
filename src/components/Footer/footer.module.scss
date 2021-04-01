@@ -1,0 +1,57 @@
+@import "@styles/variables/all";
+@import "@styles/mixins/all";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #7336aa;
+  //padding: 40px 0 0 0;
+  margin: 40px 0 0 0;
+  padding: 8px 0 32px 0;
+  text-align: center;
+  h2 {
+    color: #fff;
+    //line-height: 38px;
+  }
+
+  @include media-md-xxl() {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  @include media-xxl() {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+
+  @include media-md-xxl() {
+    text-align: left;
+  }
+
+  @include media-xxl() {
+    text-align: left;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+
+  @include media-md-xxl() {
+    text-align: left;
+  }
+
+  @include media-xxl() {
+    text-align: left;
+  }
+}
