@@ -6,14 +6,15 @@ export default function Footer() {
     <div className={styles.footer}>
       <div className={styles.contact}>
         <h2>Contact</h2>
-        <div>item1: content1</div>
-        <div>item2: content2</div>
+        <a href="mailto:andersgee@gmail.com">andersgee@gmail.com</a>
       </div>
+      {/*
       <div className={styles.about}>
         <h2>About</h2>
-        <div>item1: content1</div>
+        <a href="https://github.com/andersgee/">github</a>
         <div>item2: content2</div>
       </div>
+      */}
     </div>
   );
 }

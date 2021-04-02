@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background: #7336aa;
+  background: #7653cf;
   //padding: 40px 0 0 0;
   margin: 40px 0 0 0;
   padding: 8px 0 32px 0;
@@ -32,6 +32,11 @@
   color: #fff;
   text-align: center;
 
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
   @include media-md-xxl() {
     text-align: left;
     h2 {
@@ -55,6 +60,11 @@
   flex-direction: column;
   color: #fff;
   text-align: center;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 
   @include media-md-xxl() {
     text-align: left;
