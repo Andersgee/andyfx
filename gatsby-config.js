@@ -8,7 +8,7 @@ module.exports = {
           "260455500", //andyfx propertyid
         ],
         gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
+          //optimize_id: "OPT_CONTAINER_ID",
           anonymize_ip: true,
           cookie_expires: 0,
         },
@@ -32,7 +32,7 @@ module.exports = {
           "@templates": "src/templates",
           "@styles": "src/styles",
         },
-        extensions: ["js", "jsx", "sass", "scss"],
+        extensions: ["js", "jsx", "scss"],
       },
     },
   ],

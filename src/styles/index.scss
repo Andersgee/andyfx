@@ -2,10 +2,12 @@
 @import "fonts";
 @import "variables/fonts";
 
+/*
 * {
   box-sizing: border-box;
+  //margin: 0;
 }
-
+*/
 body {
   font-family: $font-body;
   color: #212529;
@@ -26,7 +28,14 @@ h6 {
   color: #1b2025;
 }
 
+h1 {
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+
 h2 {
   font-size: 26px;
   line-height: 35px;
+  letter-spacing: 1px;
 }

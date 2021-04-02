@@ -17,11 +17,13 @@ $borderradius: 10px;
   @include media-md-xxl() {
     flex-direction: row;
     height: 100%;
+    min-height: 300px;
   }
 
   @include media-xxl() {
     flex-direction: row;
     height: 100%;
+    min-height: 300px;
   }
 }
 
@@ -66,8 +68,8 @@ $borderradius: 10px;
 
 .cardcontent {
   background: $color-paper;
-  //box-sizing: border-box;
-  padding: 1rem 3rem 3rem 3rem;
+  box-sizing: border-box;
+  padding: 1rem 3rem 2rem 3rem;
   text-align: center;
   display: flex;
   flex-direction: column;

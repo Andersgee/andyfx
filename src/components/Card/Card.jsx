@@ -4,11 +4,12 @@ import * as styles from "./card.module.scss";
 import clsx from "clsx";
 import Button from "./Button";
 
-export default function Card({ title, content, variant, href, flip }) {
+export default function Card({ title, image, content, variant, href, flip }) {
+  const imgsrc = image || "metal.jpg";
   return (
     <div className={clsx(styles.card, flip && styles.flip)}>
       <img
-        src="/images/metal.jpg"
+        src={`/images/card/${imgsrc}`}
         className={clsx(styles.cardimage, flip && styles.flip)}
         alt={title}
       />
