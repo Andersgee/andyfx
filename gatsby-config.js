@@ -1,20 +1,23 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [
-          "260455500", //andyfx propertyid
-        ],
+        trackingIds: [`${process.env.GTAG_MEASUREMENTID}`],
         gtagConfig: {
-          //optimize_id: "OPT_CONTAINER_ID",
           anonymize_ip: true,
+          cookie_flags: "SameSite=None;Secure",
+          cookie_domain: "www.andyfx.net",
           cookie_expires: 0,
         },
         pluginConfig: {
-          head: false, // Puts tracking script in the head instead of the body
-          respectDNT: true, // Optional
+          head: false, // script in the head instead of body
+          respectDNT: true,
           exclude: ["/preview/**", "/do-not-track/me/too/"], // Avoids sending pageview hits from custom paths
         },
       },

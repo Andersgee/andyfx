@@ -1,0 +1,6 @@
+[build]
+  publish = "public/"
+  command = "gatsby build"
+
+[build.environment]
+  GTAG_MEASUREMENTID="260455500"
