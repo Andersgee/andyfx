@@ -9,26 +9,36 @@ export default function Cards() {
     <div className={styles.container}>
       <div className={styles.cards}>
         <h2 className={styles.heading}>Latest Projects</h2>
+
         <Card
-          variant="a"
-          title="wasmMozart"
+          variant="varavagar"
+          title="Våra Vägar"
+          image="varavagar.jpg"
+          content="Map, information and maintenance needs for public roads of Sweden."
+          href="https://www.varavagar.se"
+        />
+        <Card
+          flip
+          variant="climatevisualizer"
+          title="Climate Visualizer"
+          image="climatevisualizer.png"
+          content="What the worlds carbon budget means on a local municipality level."
+          href="https://www.climatevisualizer.com"
+        />
+        <Card
+          variant="mozart"
+          title="Mozart AI"
           image="wasmMozart.png"
           content="Neural net trained on mozart music brought to the web with webassembly."
           href="https://andersgee.github.io/posts/wasmMozart/index.html"
         />
         <Card
           flip
-          variant="b"
-          title="wasmShakespeare"
+          variant="shakespeare"
+          title="Shakespeare AI"
           image="wasmShakespeare.png"
           content="Neural net trained on shakespeare text brought to the web with webassembly."
           href="https://andersgee.github.io/posts/wasmShakespeare/index.html"
-        />
-        <Card
-          variant="c"
-          title="Stuff.se"
-          content="Simple project description"
-          href="https://www.google.se"
         />
       </div>
     </div>

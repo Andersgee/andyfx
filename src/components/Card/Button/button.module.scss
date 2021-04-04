@@ -16,30 +16,26 @@
   cursor: pointer;
 }
 
-.a {
-  background: linear-gradient(
-    135deg,
-    rgb(114, 233, 243) -20%,
-    rgb(64, 78, 230) 120%
-  );
-}
-
-.b {
-  background: linear-gradient(135deg, rgb(178, 222, 148), rgb(26, 212, 187));
-}
-
-.c {
-  background-image: linear-gradient(
-    135deg,
-    rgb(130, 84, 229),
-    rgb(131, 175, 227) 150%
-  );
-}
-
 .button:focus {
   text-decoration: none;
 }
 
 .button:hover {
   opacity: 0.9;
+}
+
+.varavagar {
+  background: linear-gradient(135deg, #898f58, #c4c8a7);
+}
+
+.climatevisualizer {
+  background: linear-gradient(135deg, #dd574f, #ee8984);
+}
+
+.mozart {
+  background: linear-gradient(135deg, #565d60, #9a9ea0);
+}
+
+.shakespeare {
+  background: linear-gradient(135deg, #a68d6e, #d3bfa6);
 }

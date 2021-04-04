@@ -8,7 +8,7 @@ const SEO = ({ title, description, image, article, lang }) => {
 
   const siteUrl = "https://www.andyfx.net";
   const defaultTitle = "andyfx";
-  const defaultDescription = "andyfx home";
+  const defaultDescription = "andyfx";
   const titleTemplate = "%s | andyfx";
 
   const seo = {
