@@ -4,3 +4,4 @@
 
 [build.environment]
   GTAG_MEASUREMENTID="G-TFMQQZPLRW"
+  NPM_VERSION="7.8.0"
