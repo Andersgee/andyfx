@@ -40,7 +40,7 @@ $borderradius: 10px;
 .cardimage {
   object-fit: cover;
   border-radius: $borderradius $borderradius 0 0;
-  //width: 100%;
+  width: 100%;
   height: 50%;
 
   @include media-md-xxl() {
