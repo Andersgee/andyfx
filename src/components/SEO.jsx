@@ -9,7 +9,7 @@ const SEO = ({ title, description, image, article, lang }) => {
 
   const siteUrl = "https://www.andyfx.net";
   const defaultTitle = "andyfx";
-  const defaultDescription = "andyfx";
+  const defaultDescription = "Andyfx latest web projects and contact.";
 
   const seo = {
     title: title || defaultTitle,
