@@ -3,4 +3,4 @@
   command = "gatsby build"
 
 [build.environment]
-  GTAG_MEASUREMENTID="260455500"
+  GTAG_MEASUREMENTID="G-TFMQQZPLRW"
