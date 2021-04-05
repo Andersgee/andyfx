@@ -14,13 +14,11 @@ const SEO = ({ title, description, image, article, lang }) => {
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}/images/${image || "logo/andyfx.png"}`,
+    image: `${siteUrl}/images/${image || "andyfx.png"}`,
     url: `${siteUrl}${pathname}`,
   };
 
   const ogtitle = title ? `${seo.title} | ${defaultTitle}` : defaultTitle;
-
-  //console.log("seo: ", seo);
 
   return (
     <Helmet
