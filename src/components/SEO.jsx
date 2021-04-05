@@ -20,7 +20,7 @@ const SEO = ({ title, description, image, article, lang }) => {
 
   const ogtitle = title ? `${seo.title} | ${defaultTitle}` : defaultTitle;
 
-  console.log("seo: ", seo);
+  //console.log("seo: ", seo);
 
   return (
     <Helmet
@@ -29,15 +29,14 @@ const SEO = ({ title, description, image, article, lang }) => {
         lang,
       }}
     >
-      <meta name="description" content={seo.description} />
-      <meta name="image" content={seo.image} />
       <meta charset="UTF-8" />
       <meta
         name="viewport"
         content="minimum-scale=1, initial-scale=1, width=device-width"
       />
-      <link rel="icon" type="image/png" href="favicon.png" />
-
+      <link rel="icon" type="image/png" href={`${siteUrl}/favicon.png`} />
+      <meta name="description" content={seo.description} />
+      <meta name="image" content={seo.image} />
       <meta property="og:url" content={seo.url} />
       <meta property="og:title" content={ogtitle} />
       <meta property="og:description" content={seo.description} />
