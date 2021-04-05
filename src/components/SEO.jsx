@@ -5,6 +5,7 @@ import { useLocation } from "@reach/router";
 
 const SEO = ({ title, description, image, article, lang }) => {
   const { pathname } = useLocation();
+  //pathname will be "/" for root
 
   const siteUrl = "https://www.andyfx.net";
   const defaultTitle = "andyfx";
@@ -14,10 +15,12 @@ const SEO = ({ title, description, image, article, lang }) => {
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl}/images/${image || "logo/andyfx.png"}`,
-    url: `${siteUrl}/${pathname}`,
+    url: `${siteUrl}${pathname}`,
   };
 
   const ogtitle = title ? `${seo.title} | ${defaultTitle}` : defaultTitle;
+
+  console.log("seo: ", seo);
 
   return (
     <Helmet
@@ -26,6 +29,8 @@ const SEO = ({ title, description, image, article, lang }) => {
         lang,
       }}
     >
+      <meta name="description" content={seo.description} />
+      <meta name="image" content={seo.image} />
       <meta charset="UTF-8" />
       <meta
         name="viewport"
@@ -38,12 +43,9 @@ const SEO = ({ title, description, image, article, lang }) => {
       <meta property="og:description" content={seo.description} />
       <meta property="og:image" content={seo.image} />
       {article && <meta property="og:type" content="article" />}
-
-      <meta name="description" content={seo.description} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={ogtitle} />
       <meta name="twitter:description" content={seo.description} />
-      <meta name="image" content={seo.image} />
       <meta name="twitter:image" content={seo.image} />
     </Helmet>
   );
