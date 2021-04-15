@@ -2,12 +2,20 @@
 @import "@styles/mixins/all";
 
 .footer {
+  margin-top: 40px;
+  background: #7653cf;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: $md;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  background: #7653cf;
-  //padding: 40px 0 0 0;
-  margin: 40px 0 0 0;
+  justify-content: space-around;
+
+  //margin: 40px 0 0 0;
   padding: 8px 0 32px 0;
   text-align: center;
   h2 {
@@ -16,11 +24,13 @@
   }
 
   @include media-md-xxl() {
+    max-width: 940px;
     flex-direction: row;
     text-align: left;
   }
 
   @include media-xxl() {
+    max-width: 940px;
     flex-direction: row;
     text-align: left;
   }
