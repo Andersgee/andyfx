@@ -11,6 +11,14 @@ export default function Cards() {
       <div className={styles.cards}>
         <h2 className={styles.heading}>Latest Projects</h2>
         <Card
+          flip
+          variant="weather"
+          title="Weather"
+          image={images.weather}
+          content="Weather forecast in both visual and table format."
+          href="https://weather.andyfx.net"
+        />
+        <Card
           variant="varavagar"
           title="Våra Vägar"
           image={images.varavagar}
