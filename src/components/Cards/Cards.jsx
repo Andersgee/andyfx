@@ -11,6 +11,13 @@ export default function Cards() {
       <div className={styles.cards}>
         <h2 className={styles.heading}>Latest Projects</h2>
         <Card
+          variant="julia2wat"
+          title="julia2wat"
+          image={images.julia2wat}
+          content="Online version of WebAssemblyText.jl: Convert Julia to WebAssembly text."
+          href="https://julia2wat.herokuapp.com/"
+        />
+        <Card
           flip
           variant="weather"
           title="Weather"
